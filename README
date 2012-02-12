@@ -10,6 +10,20 @@ font8x8_latin.h contains unicode points U+0000 - U+00FF
 Author: Daniel Hepper <daniel@hepper.net>
 License: Public Domain
 
+Renderer
+========
+To visualize the font, a simple renderer is included in render.c
+
+    $ gcc render.c -o render
+    $ ./render 65
+      XX    
+     XXXX   
+    XX  XX  
+    XX  XX  
+    XXXXXX  
+    XX  XX  
+    XX  XX
+
 Credits
 =======
 These header files are directly derived from an assembler file fetched from:
