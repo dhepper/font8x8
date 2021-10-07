@@ -18,9 +18,11 @@
  * Fetched from: http://dimensionalrift.homelinux.net/combuster/mos3/?p=viewsource&file=/modules/gfx/font8_8.asm
  **/
 
+ #include <stdint.h>
+
 // Constant: font8x8_0080
 // Contains an 8x8 font map for unicode points U+0080 - U+009F (C1/C2 control)
-char font8x8_control[32][8] = {
+uint8_t font8x8_control[32][8] = {
     { 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00},   // U+0080
     { 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00},   // U+0081
     { 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00},   // U+0082

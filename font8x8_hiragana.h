@@ -18,9 +18,11 @@
  * Fetched from: http://dimensionalrift.homelinux.net/combuster/mos3/?p=viewsource&file=/modules/gfx/font8_8.asm
  **/
 
+ #include <stdint.h>
+
 // Contains an 8x8 font map for unicode points U+3040 - U+309F (Hiragana)
 // Constant: font8x8_3040
-char font8x8_hiragana[96][8] = {
+uint8_t font8x8_hiragana[96][8] = {
     { 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00},   // U+3040
     { 0x04, 0x3F, 0x04, 0x3C, 0x56, 0x4D, 0x26, 0x00},   // U+3041 (Hiragana a)
     { 0x04, 0x3F, 0x04, 0x3C, 0x56, 0x4D, 0x26, 0x00},   // U+3042 (Hiragana A)
